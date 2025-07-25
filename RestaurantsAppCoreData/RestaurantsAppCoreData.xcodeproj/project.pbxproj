@@ -15,10 +15,61 @@
 		110000EB2E34298100C533FA /* RestaurantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		110001292E34360600C533FA /* Exceptions for "Entities" folder in "RestaurantsAppCoreData" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Restaurant.swift,
+				RestaurantDetail.swift,
+			);
+			target = 110000D22E34275C00C533FA /* RestaurantsAppCoreData */;
+		};
+		1100012E2E34365200C533FA /* Exceptions for "Repositories" folder in "RestaurantsAppCoreData" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				RestaurantRepository.swift,
+			);
+			target = 110000D22E34275C00C533FA /* RestaurantsAppCoreData */;
+		};
+		110001312E34366300C533FA /* Exceptions for "UseCases" folder in "RestaurantsAppCoreData" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				GetRestaurantDetailsUseCase.swift,
+				GetRestaurantsUseCase.swift,
+				ManageFavoritesUseCase.swift,
+			);
+			target = 110000D22E34275C00C533FA /* RestaurantsAppCoreData */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		110000D52E34275C00C533FA /* RestaurantsAppCoreData */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = RestaurantsAppCoreData;
+			sourceTree = "<group>";
+		};
+		110001242E3435D200C533FA /* Entities */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				110001292E34360600C533FA /* Exceptions for "Entities" folder in "RestaurantsAppCoreData" target */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		110001252E3435DD00C533FA /* UseCases */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				110001312E34366300C533FA /* Exceptions for "UseCases" folder in "RestaurantsAppCoreData" target */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		110001262E3435E900C533FA /* Repositories */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1100012E2E34365200C533FA /* Exceptions for "Repositories" folder in "RestaurantsAppCoreData" target */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -37,8 +88,8 @@
 		110000CA2E34275C00C533FA = {
 			isa = PBXGroup;
 			children = (
+				110001232E3435CB00C533FA /* Domain */,
 				110000E32E34283000C533FA /* Data */,
-				110000E22E34282500C533FA /* Domain */,
 				110000E12E34280D00C533FA /* Presentation */,
 				110000D52E34275C00C533FA /* RestaurantsAppCoreData */,
 				110000D42E34275C00C533FA /* Products */,
@@ -61,18 +112,21 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		110000E22E34282500C533FA /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
 		110000E32E34283000C533FA /* Data */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		110001232E3435CB00C533FA /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				110001262E3435E900C533FA /* Repositories */,
+				110001252E3435DD00C533FA /* UseCases */,
+				110001242E3435D200C533FA /* Entities */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
