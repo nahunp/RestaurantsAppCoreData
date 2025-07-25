@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		110000EC2E34298100C533FA /* RestaurantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000EB2E34298100C533FA /* RestaurantListView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		110000D32E34275C00C533FA /* RestaurantsAppCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantsAppCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		110000EB2E34298100C533FA /* RestaurantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,9 @@
 		110000CA2E34275C00C533FA = {
 			isa = PBXGroup;
 			children = (
+				110000E32E34283000C533FA /* Data */,
+				110000E22E34282500C533FA /* Domain */,
+				110000E12E34280D00C533FA /* Presentation */,
 				110000D52E34275C00C533FA /* RestaurantsAppCoreData */,
 				110000D42E34275C00C533FA /* Products */,
 			);
@@ -43,6 +51,28 @@
 				110000D32E34275C00C533FA /* RestaurantsAppCoreData.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		110000E12E34280D00C533FA /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				110000EB2E34298100C533FA /* RestaurantListView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		110000E22E34282500C533FA /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		110000E32E34283000C533FA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110000EC2E34298100C533FA /* RestaurantListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

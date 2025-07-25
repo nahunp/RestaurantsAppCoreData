@@ -1,17 +1,14 @@
-//
-//  RestaurantsAppCoreDataApp.swift
-//  RestaurantsAppCoreData
-//
-//  Created by CincinnatiAi Dallas on 7/25/25.
-//
 
 import SwiftUI
 
 @main
 struct RestaurantsAppCoreDataApp: App {
+    
+    @StateObject private var appCoordinator = AppCoordinator()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            appCoordinator.start()
         }
     }
 }
