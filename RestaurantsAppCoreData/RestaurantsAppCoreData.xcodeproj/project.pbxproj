@@ -40,6 +40,30 @@
 			);
 			target = 110000D22E34275C00C533FA /* RestaurantsAppCoreData */;
 		};
+		110001592E343BCA00C533FA /* Exceptions for "Remote" folder in "RestaurantsAppCoreData" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				APIClient.swift,
+				DTOs/RestaurantDetailDTO.swift,
+				DTOs/RestaurantDTO.swift,
+				RestaurantAPIService.swift,
+			);
+			target = 110000D22E34275C00C533FA /* RestaurantsAppCoreData */;
+		};
+		110001622E343C8100C533FA /* Exceptions for "Mappers" folder in "RestaurantsAppCoreData" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				RestaurantMapper.swift,
+			);
+			target = 110000D22E34275C00C533FA /* RestaurantsAppCoreData */;
+		};
+		110001652E343CA300C533FA /* Exceptions for "Repositories" folder in "RestaurantsAppCoreData" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				RemoteRestaurantRepository.swift,
+			);
+			target = 110000D22E34275C00C533FA /* RestaurantsAppCoreData */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -68,6 +92,30 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				1100012E2E34365200C533FA /* Exceptions for "Repositories" folder in "RestaurantsAppCoreData" target */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		110001542E343B9400C533FA /* Remote */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				110001592E343BCA00C533FA /* Exceptions for "Remote" folder in "RestaurantsAppCoreData" target */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		110001552E343B9F00C533FA /* Mappers */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				110001622E343C8100C533FA /* Exceptions for "Mappers" folder in "RestaurantsAppCoreData" target */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		110001562E343BB100C533FA /* Repositories */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				110001652E343CA300C533FA /* Exceptions for "Repositories" folder in "RestaurantsAppCoreData" target */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -115,6 +163,9 @@
 		110000E32E34283000C533FA /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				110001562E343BB100C533FA /* Repositories */,
+				110001552E343B9F00C533FA /* Mappers */,
+				110001542E343B9400C533FA /* Remote */,
 			);
 			path = Data;
 			sourceTree = "<group>";
