@@ -27,6 +27,7 @@
 		1100012E2E34365200C533FA /* Exceptions for "Repositories" folder in "RestaurantsAppCoreData" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				RestaurantLocalDataSourceProtocol.swift,
 				RestaurantRepository.swift,
 			);
 			target = 110000D22E34275C00C533FA /* RestaurantsAppCoreData */;
@@ -61,6 +62,18 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				RemoteRestaurantRepository.swift,
+			);
+			target = 110000D22E34275C00C533FA /* RestaurantsAppCoreData */;
+		};
+		342656E52E3466930090823C /* Exceptions for "Persistance" folder in "RestaurantsAppCoreData" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CoreDataStack.swift,
+				"Model/Entity+CoreDataClass.swift",
+				"Model/Entity+CoreDataProperties.swift",
+				Model/RestaurantModel.xcdatamodeld,
+				RestaurantEntityMapper.swift,
+				RestaurantLocalDataSource.swift,
 			);
 			target = 110000D22E34275C00C533FA /* RestaurantsAppCoreData */;
 		};
@@ -120,6 +133,14 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		342656E22E34667B0090823C /* Persistance */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				342656E52E3466930090823C /* Exceptions for "Persistance" folder in "RestaurantsAppCoreData" target */,
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +184,7 @@
 		110000E32E34283000C533FA /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				342656E22E34667B0090823C /* Persistance */,
 				110001562E343BB100C533FA /* Repositories */,
 				110001552E343B9F00C533FA /* Mappers */,
 				110001542E343B9400C533FA /* Remote */,
