@@ -1,6 +1,4 @@
-
 import SwiftUI
-
 @main
 struct RestaurantsAppCoreDataApp: App {
     
