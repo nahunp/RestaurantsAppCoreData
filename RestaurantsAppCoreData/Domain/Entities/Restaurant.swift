@@ -14,3 +14,6 @@ struct Coordinates: Equatable {
     let latitude: Double
     let longitude: Double
 }
+
+let coordinates = Coordinates(latitude: 37.77, longitude: -122.41)
+
