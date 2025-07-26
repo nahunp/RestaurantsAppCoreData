@@ -48,6 +48,8 @@
 				DTOs/RestaurantDetailDTO.swift,
 				DTOs/RestaurantDTO.swift,
 				RestaurantAPIService.swift,
+				RestaurantRemoteDataSource.swift,
+				RestaurantRemoteDataSourceProtocol.swift,
 			);
 			target = 110000D22E34275C00C533FA /* RestaurantsAppCoreData */;
 		};
@@ -62,6 +64,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				RemoteRestaurantRepository.swift,
+				RestaurantRepositoryImpl.swift,
 			);
 			target = 110000D22E34275C00C533FA /* RestaurantsAppCoreData */;
 		};
